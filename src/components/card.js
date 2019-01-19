@@ -49,45 +49,41 @@ export default function Card(props) {
   		}
 	`
 
-	//map through links to render buttons
-	let buttons;
+	//map through names, descriptions, and tech images to render
+	let infoSection;
 
 	if (props.type === 'landing'){
-		buttons = 
+		infoSection = 
 		<div>
+			<PWrapper>{props.text}</PWrapper>
 			<a href='mailto:sean.meghan.cody@gmail.com'><Button>Email Me</Button></a>
 	        <a href="/projects"><Button>View Projects</Button></a>
         </div>
         
 	} else {
-		buttons = 
+
+		let techImages = props.techImg.map((tech, index) => {
+			return (
+				<i className={tech} key={index}></i>
+			)
+		})
+
+		infoSection = 
 		<div>
+			<h2>{props.name}</h2>
+			<PWrapper>{props.text}</PWrapper>
+			{techImages}
 			<a href={props.repoUrl}><Button>View Repo</Button></a>
 	        <a href={props.liveUrl}><Button>View Live</Button></a>
-        </div>
-	}
-
-	//map through names, descriptions, and tech images to render
-	let techImages;
-
-	if (props.type === 'landing'){
-		techImages = ''
-        
-	} else {
-		buttons = 
-		<div>
-			<a href={props.repoUrl}><Button>View Repo</Button></a>
-	        <a href={props.liveUrl}><Button>View Live</Button></a>
-        </div>
+		</div>
+		
 	}
 
   	console.log('Card props:', props);
     return (
       <StyledCard>
         <ImgWrapper type={props.type} src={props.imgUrl} alt="bio" />
-        <PWrapper>{props.text}</PWrapper>
-        {buttons}
-        {techImages}
+        {infoSection}
       </StyledCard>
     );
   }
