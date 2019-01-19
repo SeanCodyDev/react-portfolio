@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //import components
 import Card from './card';
@@ -11,6 +12,7 @@ export default function LandingPage(props) {
     return (
       <div className="LandingPage">
         <h1>LandingPage</h1>
+        <FontAwesomeIcon icon="coffee" />
         <Card 
         	type="landing"
         	text={props.about.landingText} 

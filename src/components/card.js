@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 //import components
 
+
 //functional component
 export default function Card(props) {
 
@@ -64,7 +65,7 @@ export default function Card(props) {
 
 		let techImages = props.techImg.map((tech, index) => {
 			return (
-				<i className={tech} key={index}></i>
+				tech
 			)
 		})
 

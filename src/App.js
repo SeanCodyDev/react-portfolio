@@ -5,6 +5,8 @@ import './App.css';
 //import components
 import Main from './components/main';
 import Navbar from './components/navbar';
+import { FaHtml5, FaCss3, FaJsSquare, FaNodeJs, FaDatabase, FaReact } from 'react-icons/fa';
+
 
 class App extends Component {
 
@@ -27,7 +29,7 @@ class App extends Component {
           text: "A bit about CiTYSCENE",
           repoUrl: "https://github.com/SeanCodyDev/cityscene",
           liveUrl: "https://cityscene-app.herokuapp.com/",
-          techImg: ["fab fa-html5"]
+          techImg: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />, <FaNodeJs />]
         },
         {
           name: "Habit Track",
@@ -35,7 +37,7 @@ class App extends Component {
           text: "a bit about habit track",
           repoUrl: "https://github.com/SeanCodyDev/habit-track",
           liveUrl: "https://habit-track-app.herokuapp.com/",
-          techImg: ["fab fa-html5"]
+          techImg: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />, <FaNodeJs />, <FaDatabase />]
         },
         {
           name: "Endeavor",
@@ -43,7 +45,7 @@ class App extends Component {
           text: "a bit about endeavor",
           repoUrl: "https://github.com/SeanCodyDev/endeavor-react-capstone",
           liveUrl: "https://endeavor.netlify.com/",
-          techImg: ["fab fa-html5"]
+          techImg: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />, <FaNodeJs />, <FaDatabase />, <FaReact />]
         }
       ]
     }
