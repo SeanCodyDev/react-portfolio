@@ -23,26 +23,26 @@ class App extends Component {
       projects: [
         {
           name: "CiTYSCENE",
-          imgUrl: "",
-          description: "",
-          repoUrl: "",
-          liveUrl: "",
+          imgUrl: "../images/cityscene_demo1.png",
+          description: "A bit about CiTYSCENE",
+          repoUrl: "https://github.com/SeanCodyDev/cityscene",
+          liveUrl: "https://cityscene-app.herokuapp.com/",
           techImgUrl: ""
         },
         {
           name: "Habit Track",
-          imgUrl: "",
-          description: "",
-          repoUrl: "",
-          liveUrl: "",
+          imgUrl: "../images/habit-track_demo1.png",
+          description: "a bit about habit track",
+          repoUrl: "https://github.com/SeanCodyDev/habit-track",
+          liveUrl: "https://habit-track-app.herokuapp.com/",
           techImgUrl: ""
         },
         {
           name: "Endeavor",
-          imgUrl: "",
-          description: "",
-          repoUrl: "",
-          liveUrl: "",
+          imgUrl: "../images/endeavor_demo.png",
+          description: "a bit about endeavor",
+          repoUrl: "https://github.com/SeanCodyDev/endeavor-react-capstone",
+          liveUrl: "https://endeavor.netlify.com/",
           techImgUrl: ""
         }
       ]

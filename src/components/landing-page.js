@@ -15,7 +15,7 @@ export default function LandingPage(props) {
         	type="landing"
         	text={props.about.landingText} 
         	imgUrl={props.about.bioImgUrl} 
-        	title="Welcome"/>
+        />
       </div>
     );
   }
