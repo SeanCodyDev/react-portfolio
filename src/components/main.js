@@ -5,6 +5,7 @@ import {Route} from 'react-router-dom';
 //import components
 import LandingPage from './landing-page';
 import ProjectsPage from './projects-page';
+import AboutPage from './about-page';
 
 
 class Main extends Component {
@@ -20,6 +21,10 @@ class Main extends Component {
         <Route 
         	exact path="/projects" 
         	render={(props) => <ProjectsPage projects={this.props.data.projects}/>}
+        />
+        <Route 
+        	exact path="/about" 
+        	render={(props) => <AboutPage about={this.props.data.about} />}
         />
 
       </div>

@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+//import styling
+import "../index.css";
 
-//import components
+function Navbar(props) {
 
-//functional component
-class Navbar extends Component {
-
-
-  render() {
     return (
-      <div className="Navbar">
-        <h1>Navbar</h1>
+      <div className="navbar">
+        <ul className="nav-list">
+        	<li className="nav-item"><a href="/">Sean Cody</a></li>
+        	<li className="nav-item"><a href="/projects">Projects</a></li>
+        	<li className="nav-item"><a href="/about">About</a></li>
+        </ul>
 
       </div>
     );
-  }
 }
 
 export default Navbar;
