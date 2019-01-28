@@ -19,7 +19,7 @@ code {
 
 .tech, .nav-item, .icon-list li {
 	list-style: none;
-	display: block;
+	display: inline;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -32,6 +32,7 @@ code {
 .nav-item {
 	margin: 0 auto;
 	padding: 10px;
+	display: block;
 }
 
 .nav-item a {
